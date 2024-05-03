@@ -18,6 +18,7 @@ body {
    background-color: yellow;
    height: 10vh;
    border: 1px solid red;
+   padding: 0 50px;
 }
 /* 비주얼 */
 .visual {
@@ -28,23 +29,41 @@ body {
 /* 메인 콘텐츠 */
 .main {
    background-color: skyblue;
-   height: 60vh;
-   border: 1px solid red;
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: flex-start;
-   align-items: stretch;
+   /* height: 100px; */
+   /* border: 10px solid blue; */
+   display: flow-root;
+   min-height: 250px;
+   padding: 20px 16px 36px;
 }
 
 .group {
-  border: 1px solid red;
+   border: 1px solid red;
+   float: left;
+;}
+
+
+
+.group1 {
+   width: 250px;
+   background-color: orange;
+}
+
+.group2 {
+   width: 380px;
+   background: silver;
+   margin-right: 0;
+}
+
+.group3 {
+   width: 190px;
+   background-color: hotpink;
 }
 
 /* 슬로건 */
 .slogan {
    background-color: lime;
    height: 10vh;
-   border: 1px solid red;
+   clear: both;
 }
 /* 푸터 */
 .footer {
@@ -54,4 +73,21 @@ body {
 .footer-inner {
   background-color: yellow;
   height: 10vh;
+}
+
+/* flex를 지원하는 웹브라우저를 위한 스타일 */
+@supports (display: flex) {
+   .main {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+   }
+}
+
+.group:nth-child(n+2) {
+   margin-left: 0;
+}
+
+.group3 {
+   order: -1;
 }
