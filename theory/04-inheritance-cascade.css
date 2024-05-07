@@ -7,12 +7,16 @@ div {
   border: 1px solid blue;
 }
 
+/* #heading {
+  color: darkblue;
+} */
+
 .heading {
-  color: purple !important;
+  color: purple;
 }
 
 h1.heading {
-  color: purple;
+  color: orange;
 }
 
 h1 {
