@@ -1,0 +1,17 @@
+.sr-only {
+  background: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  /* inline-size: 1px; */
+  /* block-size: 1px; */
+  top: -9999px;
+  /* inset-block-start: -9999px; */
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+  opacity: 0;
+}
