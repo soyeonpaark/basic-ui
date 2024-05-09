@@ -1,0 +1,23 @@
+@import url(/src/style/theme.css);
+@import url(/src/style/reset.css);
+@import url(/src/style/base.css);
+
+/* input 컴포넌트... */
+
+/* 검색 폼 레이아웃 스타일링 */
+.search-group {
+  background-image: linear-gradient(to bottom, #ccc, #fff);
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 12px 24px;
+
+}
+
+.search {
+
+}
+
+.button .search-button {
+
+}
